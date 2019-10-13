@@ -1,0 +1,8 @@
+{
+  "ENGINE": "django.db.backends.postgresql_psycopg2",
+  "NAME": "db_balt",
+  "USER": "balt_admin",
+  "PASSWORD": "12345678",
+  "HOST": "localhost",
+  "POST": "5432"
+}
