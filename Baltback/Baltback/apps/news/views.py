@@ -4,7 +4,7 @@ from .models import Article
 
 def index(request):
     http_resp = ""
-    for news in Article.objects.all():
+    for news in Article.objects.order_by('-pub_date'):
         http_resp += "<h1>%s</h1>\n" % news.title
         http_resp += "<i>%s</i>\n" % news.text
         http_resp += "<br><b>%s</b>\n" % news.pub_date
