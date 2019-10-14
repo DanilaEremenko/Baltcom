@@ -77,13 +77,6 @@ WSGI_APPLICATION = 'Baltback.wsgi.application'
 with open('Baltback/config_files/db_config.json') as config_json:
     d = dict(json.load(config_json))
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#     }
-# }
-
 DATABASES = {
     'default': {
         'ENGINE': d.get("ENGINE"),
